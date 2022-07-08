@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'Eid_G.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_p',
-        'HOST': 'localhost',
+        'NAME': 'django_test',
+        'HOST': 'kmm.mysql.pythonanywhere-services.com',
         'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'kmm',
+        'PASSWORD': 'MNaciPJwD49z',
     }
 }
 
