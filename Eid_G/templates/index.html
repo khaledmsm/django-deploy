@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+  </head>
+  <body>
+
+    <div>
+      <div id="form">
+
+          <form class="row" method="POST" enctype="multipart/form-data" action="pic" >
+            {% csrf_token %}
+            <img src="{% static 'pics/Picture1.png' %}">
+            <h2>عيدكم مبارك وكل عام وأنتم بخير</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h4>صمم يطاقة المعايدة الخاصة بك بضغطةزر</h4>
+                <input type="textarea" class="form-control" placeholder="أكتب أسمك (مثلا/أخوكم عبدالله العتيبي)" id="text_name" name="user_name" required>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary mb-3 " id="button" >حمل الصورة</button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
